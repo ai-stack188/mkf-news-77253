@@ -138,7 +138,7 @@ DATELINE = 'WORLD NEWS - Thursday 19 November 2026'
 
 # Big banner headline for the day's top story
 BANNER_HEAD = 'MARS GATEWAY OPENS: FIRST 1,000 PIONEERS TOUCH DOWN'
-BANNER_SUB  = "Settlement programme himilestone as world leaders hail 'a giant leap for cooperation'"
+BANNER_SUB  = "Settlement programme milestone as world leaders hail 'a giant leap for cooperation'"
 
 # ticker strip (deterministic values)
 TICKER = ('MARKETS  DOW +0.4%  FTSE -0.2%  NIKKEI +0.9%     '
@@ -148,7 +148,7 @@ TICKER = ('MARKETS  DOW +0.4%  FTSE -0.2%  NIKKEI +0.9%     '
 STORIES = [
  ("GAMING",
   "GTA VI LAUNCH: STORES SELL OUT WORLDWIDE AS GAMERS QUEUE FOR MIDNIGHT OPENINGS",
-  "Rockstar's long-awaited sequel hiconsoles at midnight; first-week sales are on pace to break every record in entertainment history."),
+  "Rockstar's long-awaited sequel hit consoles at midnight; first-week sales are on pace to break every record in entertainment history."),
  ("MARKETS",
   "FED MINUTES SIGNAL SLOWER RATE PATH; STOCKS END MIXED",
   "Dow and Nikkei edge higher while the FTSE slips; traders weigh fresh inflation data as bond yields ease for a third straight session."),
@@ -182,7 +182,7 @@ def render():
     rect(buf, 0, 0, W, 8, INK)
     rect(buf, 0, 88, W, 92, ACCENT)
     draw_text_center(buf, DATELINE, 22, INK, 2)
-    draw_text_center(buf, 'MADE.FUN FRONTPAGE DESK  -  EDITION No. ' + str(100 + (len(SEED)*7) % 400), 58, GREY, 1)
+    draw_text_center(buf, 'MADE.FUN FRONT PAGE DESK  -  EDITION No. ' + str(100 + (len(SEED)*7) % 400), 58, GREY, 1)
     rect(buf, 0, 92, W, 102, PAPER2)
     draw_text(buf, 'VOL. ' + str(2026 - 1900) + '  -  NO. ' + str(320 + len(SEED) % 20), 16, 95, GREY, 1)
     draw_text(buf, 'LATE CITY FINAL  -  PRICE $2.50', W-16-text_w('LATE CITY FINAL  -  PRICE $2.50',1), 95, GREY, 1)
@@ -193,7 +193,7 @@ def render():
     # ---- banner headline (top story, big type)
     draw_text_center(buf, 'EXCLUSIVE', 116, ACCENT, 1)
     draw_text_center(buf, BANNER_HEAD, 130, INK, 3)
-    draw_text_center(buf, BANNER_SUB, 158, GREY, 1)
+    draw_text_center(buf, BANNER_SUB, 156, GREY, 1)
     rect(buf, 0, 172, W, 175, ACCENT)
 
     # ---- ticker strip
